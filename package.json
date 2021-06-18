@@ -1,0 +1,26 @@
+{
+  "name": "ventilador-iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "genkeys": "openssl genrsa -out pk.pem 4096 && openssl req -new -x509 -key pk.pem -out cert.pem",
+    "gendb": "node gendb.js"
+  },
+  "keywords": [
+    "esp32",
+    "iot"
+  ],
+  "author": "imharvol <imharvol@gmail.com> (https://imharvol.com/)",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "aedes": "^0.46.0",
+    "better-sqlite3": "^7.4.1",
+    "colorsys": "^1.0.22",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hcaptcha": "0.0.2",
+    "socket.io": "^4.1.2"
+  }
+}
